@@ -1,17 +1,25 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
-import "./global.css"
-
+import { Space_Mono } from 'next/font/google'; // Añade esta importación
+import "./global.css";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
   variable: "--font-geist-sans",
   weight: "100 900",
 });
+
 const geistMono = localFont({
   src: "./fonts/GeistMonoVF.woff",
   variable: "--font-geist-mono",
   weight: "100 900",
+});
+
+// Añade Space Mono
+const spaceMono = Space_Mono({
+  weight: ['400', '700'], // Puedes ajustar los pesos que necesites
+  subsets: ['latin'],
+  variable: '--font-space-mono', // Define la variable CSS
 });
 
 export const metadata: Metadata = {
@@ -26,8 +34,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body 
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+      <body
+        className={`${geistSans.variable} ${geistMono.variable} ${spaceMono.variable} antialiased`}
       >
         {children}
       </body>
