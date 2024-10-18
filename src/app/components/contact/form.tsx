@@ -1,6 +1,4 @@
 import React from 'react'
-import { useState } from 'react';
-import type { ContactFormData } from '../../types/types';
 import  Input  from '../ui/form/input-form.component';
 import { TextArea } from '../ui/form/textA-from.component';
 import { Button } from '../ui/form/button-form.component';

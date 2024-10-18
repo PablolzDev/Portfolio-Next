@@ -3,25 +3,28 @@ import Hero from "../app/components/hero/Hero";
 import ProfileCard from "./components/about/profileCard";
 import ContactSection from "./components/contact/contact-section";
 import ProjectSection from "./components/projectS/projectWrapper";
+import Footer from './components/Footer/footer'
+
 
 export default function Home() {
     return (
         <>
-            <header>
-                <Header />
-                <Hero />
-            </header>
+
+            <Header />
+            <Hero />
+
             <main>
                 <section className="mt-24">
-                    <ProfileCard/>
+                    <ProfileCard />
                 </section>
                 <section className="mt-36 ">
-                    <ProjectSection/>
+                    <ProjectSection />
                 </section>
                 <section>
-                    <ContactSection/>
+                    <ContactSection />
                 </section>
             </main>
+            <Footer />
 
         </>
 
