@@ -30,4 +30,8 @@ body {
 
 .space-mono {
     font-family: var(--font-space-mono);
-  }
+}
+
+.maxH {
+    max-height: 1200px;
+}

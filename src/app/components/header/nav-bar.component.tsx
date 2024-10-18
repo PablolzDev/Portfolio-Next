@@ -3,9 +3,11 @@ import NavBarItemComponent from './nav-bar-item.component'
 
 
 const NavItems = [
-    {path: "/about", title: "Acerca de Mi"},
+    {path: "/", title: "Home"},
+    {path: "/about", title: "Who I Am"},
     {path: "/projects", title: "Projects"},
     {path: "/contact", title: "Contact"}
+ 
 ]
 
     

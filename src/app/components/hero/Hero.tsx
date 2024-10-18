@@ -4,19 +4,26 @@ import Logo from '../ui/logo.component'
 
 export default function Hero() {
     return (
-        <>
-            <section className='flex  mt-44'>
-                <div className='' >
-                    <h1 className='mx-64 w-full h-auto  mt-20 text-7xl'>Crafting digital experiences where <SpanColor>elegance</SpanColor> meets <SpanColor>functionality</SpanColor>.</h1>
-                    <p className='w-1/3 ml-64 mt-10 text-3xl'>Front End Developer UX-UI Designer</p>
+        <div className="max-w-8xl max-h-fit mx-auto  px-4 sm:px-6 lg:px-8">
+            <section className='flex flex-col lg:flex-row items-center justify-end py-20 lg:py-32 gap-40 '>
+                <div className="container ml-60 flex flex-col text-2xl"> {/* Contenedor para el texto */}
+                    <h1 className='md:text-5xl lg:text-7xl font-bold'>
+                        Crafting digital experiences where{' '}
+                        <SpanColor>elegance</SpanColor> meets{' '}
+                        <SpanColor>functionality</SpanColor>.
+                    </h1>
+                    <p className='mt-6 md:text-2xl lg:text-3xl'>
+                        Front End Developer 
+                    </p>
+                    <p className='mt-6 md:text-2xl lg:text-3xl' >
+                        UX-UI Designer
+                    </p>
                 </div>
+
+                <div className="mt-10 lg:mt-0 flex-shrink-0">
                     <Logo />
-
-
-
+                </div>
             </section>
-
-        </>
-
+        </div>
     )
 }

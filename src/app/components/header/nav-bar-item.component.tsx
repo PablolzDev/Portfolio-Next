@@ -12,6 +12,6 @@ export default function NavBarItemComponent({ path, title}: Iprops) {
     const currentpath = usePathname()
 
   return (
-    <Link href={path} className={`hover:text-gray-300 transition-colors ${currentpath === path && "text-lime-200"}`}>{title}</Link>
+    <Link href={path} className={`hover:text-gray-300 transition-colors ${currentpath === path && "text-green-300"}`}>{title}</Link>
   )
 }
