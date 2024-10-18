@@ -3,7 +3,6 @@
 import React, { useState } from 'react';
 import Image from 'next/image';
 
-
 const experiences = [
     {
         company: 'Portfolio',
@@ -35,7 +34,7 @@ const experiences = [
     },
 ];
 
-export default function ExperienceSection() {
+export function ExperienceSection() {
     const [selectedExperience, setSelectedExperience] = useState(0);
     const [imageError, setImageError] = useState(false);
 
@@ -44,51 +43,78 @@ export default function ExperienceSection() {
     };
 
     return (
-        <div className="max-w-7xl ml-16 rounded-lg mt-8">
-            <h2 className="text-5xl font-bold mb-11">Projects</h2>
-            <div className="flex flex-col md:flex-row">
-                <div className="w-full md:w-1/4 mb-4 md:mb-0">
-                    {experiences.map((exp, index) => (
-                        <div
-                            key={exp.company}
-                            className={`flex items-center space-x-2 cursor-pointer p-2 rounded ${selectedExperience === index ? 'bg-green-900' : ''
+        <div className="w-full">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6 sm:mb-8 lg:mb-11">Projects</h2>
+            
+            {/* Main content container */}
+            <div className="flex flex-col lg:flex-row gap-6 lg:gap-8">
+                {/* Sidebar navigation */}
+                <div className="w-full lg:w-1/4">
+                    <div className="flex lg:flex-col gap-3 overflow-x-auto lg:overflow-x-visible pb-4 lg:pb-0">
+                        {experiences.map((exp, index) => (
+                            <div
+                                key={exp.company}
+                                className={`flex-shrink-0 lg:flex-shrink cursor-pointer p-3 rounded-lg transition-all duration-200 ${
+                                    selectedExperience === index 
+                                        ? 'bg-green-900 shadow-lg' 
+                                        : 'hover:bg-green-900/20'
                                 }`}
-                            onClick={() => {
-                                setSelectedExperience(index);
-                                setImageError(false);
-                            }}
-                        >
-
-                            <span className={`${selectedExperience === index ? 'text-green-300' : 'text-gray-400'}`}>
-                                {exp.company}
-                            </span>
-                        </div>
-                    ))}
-                </div>
-                <div className="w-11/12 flex md:w-3/4 md:pl-6">
-                    <div className="mb-4 relative w-full aspect-video">
-                        {!imageError ? (
-                            <Image
-                                src={experiences[selectedExperience].image}
-                                alt={`${experiences[selectedExperience].company} image`}
-                                fill
-                                style={{ objectFit: 'cover' }}
-                                className="rounded-lg "
-                                onError={handleImageError}
-                            />
-                        ) : (
-                            <div className="w-48 h-full bg-gray-200 flex items-center justify-center rounded-lg">
-                                <span className="text-gray-500">Image not available</span>
+                                onClick={() => {
+                                    setSelectedExperience(index);
+                                    setImageError(false);
+                                }}
+                            >
+                                <span className={`whitespace-nowrap ${
+                                    selectedExperience === index 
+                                        ? 'text-green-300' 
+                                        : 'text-gray-400 hover:text-green-300'
+                                }`}>
+                                    {exp.company}
+                                </span>
                             </div>
-                        )}
+                        ))}
                     </div>
-                    <div className='ml-16'>
-                        <h3 className="font-semibold text-lg text-green-300">{experiences[selectedExperience].role}</h3>
-                        <p className="text-purple-400 mb-2">{experiences[selectedExperience].company}</p>
-                        <p className="text-sm text-gray-300 mb-2">{experiences[selectedExperience].description}</p>
-                        <p className="text-gray-400 text-sm">{experiences[selectedExperience].duration}</p>
-                    </div>
+                </div>
 
+                {/* Content area */}
+                <div className="w-full lg:w-3/4">
+                    <div className="flex flex-col sm:flex-row gap-6">
+                        {/* Image container */}
+                        <div className="w-full sm:w-1/2">
+                            <div className="relative aspect-video w-full">
+                                {!imageError ? (
+                                    <Image
+                                        src={experiences[selectedExperience].image}
+                                        alt={`${experiences[selectedExperience].company} image`}
+                                        fill
+                                        style={{ objectFit: 'cover' }}
+                                        className="rounded-lg"
+                                        onError={handleImageError}
+                                    />
+                                ) : (
+                                    <div className="w-full h-full bg-gray-200 flex items-center justify-center rounded-lg">
+                                        <span className="text-gray-500">Image not available</span>
+                                    </div>
+                                )}
+                            </div>
+                        </div>
+
+                        {/* Text content */}
+                        <div className="w-full sm:w-1/2 space-y-4">
+                            <h3 className="font-semibold text-lg text-green-300">
+                                {experiences[selectedExperience].role}
+                            </h3>
+                            <p className="text-purple-400">
+                                {experiences[selectedExperience].company}
+                            </p>
+                            <p className="text-sm text-gray-300">
+                                {experiences[selectedExperience].description}
+                            </p>
+                            <p className="text-gray-400 text-sm">
+                                {experiences[selectedExperience].duration}
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
