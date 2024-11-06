@@ -89,9 +89,6 @@ export function ExperienceSection() {
                             <p className="text-sm text-gray-300">
                                 {experiences[selectedExperience].description}
                             </p>
-                            <p className="text-gray-400 text-sm">
-                                {experiences[selectedExperience].duration}
-                            </p>
                         </div>
                     </div>
                 </div>
