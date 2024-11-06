@@ -4,7 +4,7 @@ import Logo from '../ui/logo.component'
 
 export default function Hero() {
     return (
-        <div className="w-full min-h-screen  px-4 sm:px-6 lg:px-8 pt-20">
+        <div className="w-full min-h-screen  px-4 sm:px-6 lg:px-8 pt-20" id='home'>
           <section className="container mx-auto flex flex-col-reverse lg:flex-row items-center justify-between gap-8 lg:gap-12 py-12 lg:py-20">
             <div className="w-full lg:w-3/5 space-y-6 text-center lg:text-left">
               <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold leading-tight">

@@ -12,15 +12,15 @@ export default function Home() {
             <Hero />
 
             <main className="flex-grow">
-                <section className="container mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-24">
+                <section className="container mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-24" id='about'>
                     <ProfileCard />
                 </section>
 
-                <section className="container mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-24">
+                <section className="container mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-24" id='projects'>
                     <ProjectSection />
                 </section>
 
-                <section className="container mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-24">
+                <section className="container mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-24" id='contact'>
                     <ContactSection />
                 </section>
             </main>

@@ -61,14 +61,16 @@ const ProfileCard: FC = () => {
                 <Linkedin className="w-4 h-4 sm:w-5 sm:h-5 text-gray-300" />
               </a>
               <a 
-                href="#" 
+                href="mailto:pabloinprgramacion@gmail.com" 
                 className="p-2 sm:p-3 bg-emerald-900/50 rounded-xl hover:bg-emerald-800/50 transition-colors"
               >
                 <Mail className="w-4 h-4 sm:w-5 sm:h-5 text-gray-300" />
               </a>
               <a 
-                href="#" 
+                href="https://github.com/PablolzDev" 
                 className="p-2 sm:p-3 bg-emerald-900/50 rounded-xl hover:bg-emerald-800/50 transition-colors"
+                target='_blank'
+                rel="noopener noreferrer"
               >
                 <Github className="w-4 h-4 sm:w-5 sm:h-5 text-gray-300" />
               </a>
