@@ -7,8 +7,8 @@ import SpanColor from '../ui/span-color.component'
 
 export default function Component() {
   return (
-    <footer className="w-full  ">
-      <div className="container px-4 py-8 md:py-12 mx-auto">
+    <footer className="w-full">
+      <div className="container px-4 py-8 md:py-12">
         <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
           <div>
             <Link href="/" className="text-xl sm:text-2xl font-bold tracking-tight hover:opacity-80 transition-opacity">

@@ -5,13 +5,18 @@ import ContactSection from "./components/contact/contact-section";
 import ProjectSection from "./components/projectS/projectWrapper";
 import Footer from './components/Footer/footer'
 
+import Stack from "./components/Stacks/stack-section";
+
 export default function Home() {
     return (
         <div className="flex flex-col min-h-screen">
             <Header />
-            <Hero />
+
 
             <main className="flex-grow">
+                <section className="container mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-24" id='about'>
+                    <Hero />
+                </section>
                 <section className="container mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-24" id='about'>
                     <ProfileCard />
                 </section>
@@ -20,12 +25,18 @@ export default function Home() {
                     <ProjectSection />
                 </section>
 
+                <section className="container mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-24" id='projects'>
+                    <Stack />
+                </section>
+
                 <section className="container mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-24" id='contact'>
                     <ContactSection />
                 </section>
             </main>
 
-            <Footer />
+            <footer className="container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-24">
+                <Footer />
+            </footer>
         </div>
     )
 }
