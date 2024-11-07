@@ -1,7 +1,6 @@
-
 import Image from 'next/image'
 import { FC } from 'react'
-import { Mail, Linkedin,  Github } from 'lucide-react'
+import { Mail, Linkedin, Github, FileText } from 'lucide-react'
 import SpanColor from '../ui/span-color.component'
 
 const ProfileCard: FC = () => {
@@ -35,44 +34,52 @@ const ProfileCard: FC = () => {
                 Pablo Lopez
               </h1>
               <p className="text-gray-300 mt-2">
-                Front End Developer - Drawn to UX/UI design 
+                Front End Developer - Drawn to UX/UI design
               </p>
             </div>
 
             {/* Description */}
             <p className="text-gray-300 md:inline-flex inline-flex leading-relaxed pr-0 sm:pr-8 lg:pr-16">
-              Junior Front-End Developer with a strong foundation in HTML, CSS, and TypeScript, 
-              seeking to launch my career in web development. Recent coding bootcamp graduate 
-              with hands-on experience in React.js and a passion for creating responsive, 
-              user-friendly websites. bringing a keen eye for aesthetics and user experience. 
-              Committed team player with excellent communication skills, ready to contribute 
-              fresh ideas and grow alongside experienced professionals. Excited to tackle new 
+              Junior Front-End Developer with a strong foundation in HTML, CSS, and TypeScript,
+              seeking to launch my career in web development. Recent coding bootcamp graduate
+              with hands-on experience in React.js and a passion for creating responsive,
+              user-friendly websites. bringing a keen eye for aesthetics and user experience.
+              Committed team player with excellent communication skills, ready to contribute
+              fresh ideas and grow alongside experienced professionals. Excited to tackle new
               challenges and expand my skillset.
             </p>
 
             {/* Social Links */}
             <div className="flex gap-3 sm:gap-4">
-              <a 
-                href="https://www.linkedin.com/in/pablo-lopez-702501288" 
+              <a
+                href="https://www.linkedin.com/in/pablo-lopez-702501288"
                 className="p-2 sm:p-3 bg-emerald-900/50 rounded-xl hover:bg-emerald-800/50 transition-colors"
                 target='_blank'
                 rel="noopener noreferrer"
               >
                 <Linkedin className="w-4 h-4 sm:w-5 sm:h-5 text-gray-300" />
               </a>
-              <a 
-                href="mailto:pabloinprgramacion@gmail.com" 
+              <a
+                href="mailto:pabloinprgramacion@gmail.com"
                 className="p-2 sm:p-3 bg-emerald-900/50 rounded-xl hover:bg-emerald-800/50 transition-colors"
               >
                 <Mail className="w-4 h-4 sm:w-5 sm:h-5 text-gray-300" />
               </a>
-              <a 
-                href="https://github.com/PablolzDev" 
+              <a
+                href="https://github.com/PablolzDev"
                 className="p-2 sm:p-3 bg-emerald-900/50 rounded-xl hover:bg-emerald-800/50 transition-colors"
                 target='_blank'
                 rel="noopener noreferrer"
               >
                 <Github className="w-4 h-4 sm:w-5 sm:h-5 text-gray-300" />
+              </a>
+              <a
+                href="/Cv Resume Pablo Lopez.pdf"
+                className="p-2 sm:p-3 bg-emerald-900/50 rounded-xl hover:bg-emerald-800/50 transition-colors"
+                target='_blank'
+                rel="noopener noreferrer"
+              >
+                <FileText className="w-4 h-4 sm:w-5 sm:h-5 text-gray-300" />
               </a>
             </div>
           </div>
