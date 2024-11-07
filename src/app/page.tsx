@@ -6,6 +6,7 @@ import ProjectSection from "./components/projectS/projectWrapper";
 import Footer from './components/Footer/footer'
 
 import Stack from "./components/Stacks/stack-section";
+import Learning from "./components/learning/learning";
 
 export default function Home() {
     return (
@@ -14,7 +15,7 @@ export default function Home() {
 
 
             <main className="flex-grow">
-                <section className="container mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-24" id='about'>
+                <section className="container mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-24" id='home'>
                     <Hero />
                 </section>
                 <section className="container mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-24" id='about'>
@@ -25,11 +26,16 @@ export default function Home() {
                     <ProjectSection />
                 </section>
 
-                <section className="container mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-24" id='projects'>
+                <section className="container mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-24" id='skills'>
                     <Stack />
+                    <div className=" mt-10 ">
+                        <Learning />
+                    </div>
+
                 </section>
 
-                <section className="container mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-24" id='contact'>
+
+                <section className="container mx-auto mt-10 px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-24" id='contact'>
                     <ContactSection />
                 </section>
             </main>

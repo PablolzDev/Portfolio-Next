@@ -6,7 +6,9 @@ const NavItems = [
     {path: "#home", title: "Home"},
     {path: "#about", title: "Who I Am"},
     {path: "#projects", title: "Projects"},
+    {path: "#skills", title: "Skills"},
     {path: "#contact", title: "Contact"}
+    
 ]
 
     

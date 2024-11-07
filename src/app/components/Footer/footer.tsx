@@ -41,6 +41,11 @@ export default function Component() {
                     Contact
                   </Link>
                 </li>
+                <li>
+                  <Link href="#skills" className="text-muted-foreground hover:text-foreground transition-colors">
+                    Skills
+                  </Link>
+                </li>
               </ul>
             </FooterSection>
             <FooterSection title="Connect">

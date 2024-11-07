@@ -13,8 +13,14 @@ const experiences = [
         name: 'MisTech',
         habilities: 'Software Developer',
         description: 'Developed innovative software solutions for various clients, focusing on web applications and mobile development. Collaborated in an agile team environment to deliver high-quality products.',
-        image: '/portfolio.png'
+        image: '/job.png'
     },
+    {
+        name: 'More Projects Coming Soon',
+        habilities: '',
+        description: '',
+        image: '/1.png'
+    }
    
 ];
 
@@ -71,7 +77,7 @@ export function ExperienceSection() {
                                     />
                                 ) : (
                                     <div className="w-full h-full bg-gray-200 flex items-center justify-center rounded-lg">
-                                        <span className="text-gray-500">Image not available</span>
+                                        <span className="text-gray-500">More Projects Coming Soon</span>
                                     </div>
                                 )}
                             </div>
