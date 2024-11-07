@@ -11,6 +11,6 @@ export default function NavBarItemComponent({ path, title }: Iprops) {
 
 
   return (
-    <Link href={path} scroll={true} className={`hover:text-gray-300 transition-colors`}>{title}</Link>
+    <Link href={path} scroll={true} className={`hover:text-green-300 transition-colors`}>{title}</Link>
   )
 }
