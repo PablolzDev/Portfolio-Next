@@ -21,6 +21,15 @@ const experiences = [
         demo: 'https://job-find-theta.vercel.app/vacancies'
     },
     {
+        name: 'Riwi Vet',
+        habilities: 'JavaScript, HTML, Bootstrap',
+        description: 'This is a console-based application that allows users to manage a list of pets. The application provides a seamless user experience through a console-based interface, enabling users to easily add, update, delete, and view the pet information. Despite the static storage of data in an array, the application demonstrates proficiency in manipulating the HTML Document Object Model (DOM) to dynamically update the user interface. Additionally, the project showcases the integration of the Bootstrap CSS framework.',
+        image: '/vet.png',
+        github: 'https://github.com/PablolzDev/veterinariaPabloLopez_Dell.git',
+        demo: 'https://pablolzdev.github.io/veterinariaPabloLopez_Dell/'
+
+    },
+    {
         name: 'More Projects Coming Soon',
         habilities: '',
         description: '',
@@ -50,13 +59,12 @@ export function ExperienceSection() {
                         {experiences.map((exp, index) => (
                             <div
                                 key={exp.name}
-                                className={`flex-shrink-0 lg:flex-shrink cursor-pointer p-3 rounded-lg transition-all duration-200 ${
-                                    selectedExperience === index
+                                className={`flex-shrink-0 lg:flex-shrink cursor-pointer p-3 rounded-lg transition-all duration-200 ${selectedExperience === index
                                         ? 'bg-green-900 shadow-lg'
                                         : index === experiences.length - 1
-                                        ? 'cursor-not-allowed opacity-50'
-                                        : 'hover:bg-green-900/20'
-                                }`}
+                                            ? 'cursor-not-allowed opacity-50'
+                                            : 'hover:bg-green-900/20'
+                                    }`}
                                 onClick={() => {
                                     if (index !== experiences.length - 1) {
                                         setSelectedExperience(index);
@@ -65,11 +73,10 @@ export function ExperienceSection() {
                                 }}
                             >
                                 <span
-                                    className={`whitespace-nowrap ${
-                                        selectedExperience === index
+                                    className={`whitespace-nowrap ${selectedExperience === index
                                             ? 'text-green-300'
                                             : 'text-gray-400 hover:text-green-300'
-                                    }`}
+                                        }`}
                                 >
                                     {exp.name}
                                 </span>
@@ -112,7 +119,7 @@ export function ExperienceSection() {
                             <p className="text-sm text-gray-300">
                                 {experiences[selectedExperience].description}
                             </p>
-                            
+
                             {/* Project links */}
                             {experiences[selectedExperience].github || experiences[selectedExperience].demo ? (
                                 <div className="flex gap-4 pt-4">

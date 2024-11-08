@@ -1,6 +1,6 @@
 import React from 'react';
 import GlassCard from '../ui/glass-card';
-import { FaCss3Alt, FaHtml5,FaReact} from "react-icons/fa6";
+import { FaCss3Alt, FaHtml5,FaReact, FaBootstrap } from "react-icons/fa6";
 import { SiTailwindcss, SiTypescript, SiVisualstudiocode, SiGit, SiGithub, SiFigma } from "react-icons/si";
 
 import SpanColor from '../ui/span-color.component';
@@ -19,6 +19,7 @@ const Stack: React.FC = () => {
         { icon: SiTypescript, title: 'TypeScript', color: 'text-blue-600' },
         { icon: FaReact, title: 'React', color: 'text-blue-500' },
         { icon: SiTailwindcss, title: 'Tailwind', color: 'text-cyan-400' },
+        { icon: FaBootstrap, title: 'Bootstrap', color: 'text-purple-600' }
     ];
 
     const toolsTechnologies: Technology[] = [
