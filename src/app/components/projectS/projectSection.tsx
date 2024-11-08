@@ -24,7 +24,7 @@ const experiences = [
         name: 'Riwi Vet',
         habilities: 'JavaScript, HTML, Bootstrap',
         description: 'This is a console-based application that allows users to manage a list of pets. The application provides a seamless user experience through a console-based interface, enabling users to easily add, update, delete, and view the pet information. Despite the static storage of data in an array, the application demonstrates proficiency in manipulating the HTML Document Object Model (DOM) to dynamically update the user interface. Additionally, the project showcases the integration of the Bootstrap CSS framework.',
-        image: '/vet.png',
+        image: '/Vet.png',
         github: 'https://github.com/PablolzDev/veterinariaPabloLopez_Dell.git',
         demo: 'https://pablolzdev.github.io/veterinariaPabloLopez_Dell/'
 
@@ -102,7 +102,7 @@ export function ExperienceSection() {
                                     />
                                 ) : (
                                     <div className="w-full h-full bg-gray-200 flex items-center justify-center rounded-lg">
-                                        <span className="text-gray-500">More Projects Coming Soon</span>
+                                        <span className="text-gray-500">Erro loading the image</span>
                                     </div>
                                 )}
                             </div>
