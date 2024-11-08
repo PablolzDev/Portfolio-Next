@@ -1,36 +1,96 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# PabloDev Portfolio
 
-## Getting Started
+> Crafting digital experiences where elegance meets functionality.
 
-First, run the development server:
+## 🚀 Overview
+
+A personal portfolio website built with modern technologies that showcases my work as a Front-End Developer and UX/UI Designer. The site features a clean and modern interface that reflects my focus on creating elegant and functional digital experiences.
+
+## ✨ Features
+
+- Modern and minimalist design
+- Fully responsive interface
+- Intuitive navigation
+- Projects and skills sections
+- Contact form
+- Performance optimized
+- Dark theme
+- Clean and maintainable code
+
+## 🛠️ Built With
+
+- **Next.js** - React framework for production
+- **React** - JavaScript library for building user interfaces
+- **TypeScript** - Typed superset of JavaScript
+- **Tailwind CSS** - Utility-first CSS framework
+
+## 💻 Getting Started
 
 ```bash
+# Clone the repository
+git clone [repository-url]
+
+# Navigate to the project directory
+cd [project-name]
+
+# Install dependencies
+npm install
+
+# Run the development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+The project will be available at `http://localhost:3000`
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🗂️ Project Structure
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+The portfolio includes the following main sections:
+- Landing page with professional introduction
+- "Who I Am" section with personal and professional background
+- Projects gallery
+- Technical skills showcase
+- Contact form
 
-## Learn More
+## 🔧 Tools & Technologies
 
-To learn more about Next.js, take a look at the following resources:
+### Front End Development
+- HTML5
+- CSS3
+- TypeScript
+- React
+- Tailwind
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Development Tools
+- VS Code
+- Figma
+- Git
+- GitHub
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🌟 Skills Showcase
 
-## Deploy on Vercel
+- Front End Development
+- UX/UI Design
+- Responsive Web Design
+- Version Control
+- Modern Web Technologies
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 📱 Contact & Social
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Email: pabloinprogramacion@gmail.com
+- LinkedIn: [https://www.linkedin.com/in/pablo-lopez-702501288/]
+- GitHub: [https://github.com/PablolzDev]
+
+## 🔨 Project Status
+
+Currently available for new projects and collaborations. Continuously adding new features and improvements.
+
+## 📄 License
+
+© 2024 Pablo Lopez. All rights reserved.
+
+## 🤝 Contributing
+
+While this is a personal portfolio project, suggestions and feedback are welcome! Feel free to reach out via email 
+
+---
+*This portfolio is designed and built by Pablo Lopez, showcasing a commitment to creating elegant and functional web experiences.*
