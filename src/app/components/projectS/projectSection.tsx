@@ -10,7 +10,7 @@ const experiences = [
         description: 'Developed a personal portfolio website using Next.js, Tailwind CSS, and TypeScript. The project highlights my skills, experiences, and past projects through a clean, responsive, and modern design. The portfolio is optimized for fast loading, intuitive navigation, and showcases my expertise in frontend technologies. The project served as both a professional showcase and a sandbox for experimenting with new design and development techniques.',
         image: '/portfolio.png',
         github: 'https://github.com/PablolzDev/Portfolio-Next',
-        demo: 'https://portfolio-next-nu-three.vercel.app/'
+        demo: 'https://pablolz.xyz/'
     },
     {
         name: 'Job Find',
