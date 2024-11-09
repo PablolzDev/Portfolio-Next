@@ -40,7 +40,7 @@ const ProfileCard: FC = () => {
 
             {/* Description */}
             <p className="text-gray-300 md:inline-flex inline-flex leading-relaxed pr-0 sm:pr-8 lg:pr-16">
-              Junior Front-End Developer with a strong foundation in HTML, CSS, and TypeScript,
+              Front-End developer with a strong foundation in HTML, CSS, and TypeScript,
               seeking to launch my career in web development. Recent coding bootcamp graduate
               with hands-on experience in React.js and a passion for creating responsive,
               user-friendly websites. bringing a keen eye for aesthetics and user experience.
@@ -74,7 +74,7 @@ const ProfileCard: FC = () => {
                 <Github className="w-4 h-4 sm:w-5 sm:h-5 text-gray-300" />
               </a>
               <a
-                href="/Cv Resume Pablo Lopez.pdf"
+                href="/Pablo Lopez Resume.pdf"
                 className="p-2 sm:p-3 bg-emerald-900/50 rounded-xl hover:bg-emerald-800/50 transition-colors"
                 target='_blank'
                 rel="noopener noreferrer"

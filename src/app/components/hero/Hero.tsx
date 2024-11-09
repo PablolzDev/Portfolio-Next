@@ -17,7 +17,7 @@ export default function Hero() {
                   Front End Developer
                 </p>
                 <p className="text-xl sm:text-2xl lg:text-3xl">
-                  UX-UI Designer
+                  Web Ui Developer
                 </p>
               </div>
             </div>
