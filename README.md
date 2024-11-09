@@ -28,10 +28,10 @@ A personal portfolio website built with modern technologies that showcases my wo
 
 ```bash
 # Clone the repository
-git clone [repository-url]
+git clone [https://github.com/PablolzDev/Portfolio-Next.git]
 
 # Navigate to the project directory
-cd [project-name]
+cd [Portfolio-Next]
 
 # Install dependencies
 npm install
